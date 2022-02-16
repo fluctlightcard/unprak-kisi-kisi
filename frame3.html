@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Frame3</title>
+    <style>
+      .btn {
+        width: 200px;
+        height: 50px;
+        border: none;
+        color: #000000;
+        background-color: #767c77;
+        border-radius: 4px;
+        transition: ease-out 0.3s;
+        font-size: 20px;
+        outline: none;
+        position: relative;
+        z-index: 1;
+      }
+
+      .btn:hover {
+        color: #719192;
+        cursor: pointer;
+      }
+
+      .btn:before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+        background-color: #3c4245;
+        border-radius: 4px;
+      }
+
+      .btn:hover:before {
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body bgcolor="#DFEEEA">
+    <center>
+      <h2>Frame3</h2>
+      <a href="index.html">
+        <button class="btn">BACK</button>
+      </a>
+    </center>
+  </body>
+</html>

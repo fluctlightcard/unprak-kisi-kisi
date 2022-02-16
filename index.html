@@ -1,0 +1,147 @@
+<!-- struktur dasar html -->
+<html>
+    <head>
+        <title>
+            Hai Aku Kesa :3
+        </title>
+        <style>
+            .btn {
+                width: 200px;
+                height: 50px;
+                border: none;
+                color: #000000;
+                background-color: #767C77;
+                border-radius: 4px;
+                transition: ease-out 0.3s;
+                font-size: 30px;
+                outline: none;
+                border: 3px solid #000000;
+                position: relative;
+                z-index: 1;
+            }
+
+            .btn:hover {
+                color: #719192;
+                cursor: pointer;
+            }
+
+            .btn:before {
+                transition: 0.5s all ease;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                right: 50%;
+                bottom: 0;
+                opacity: 0;
+                content: "";
+                background-color: #3C4245;
+            }
+
+            .btn:hover:before {
+                transition: 0.5s all ease;
+                left: 0;
+                right: 0;
+                opacity: 1;
+                z-index: -1;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:#A7C4BC">
+        <!-- tampilan paragraf, break line -->
+        <h1 style="text-align:center; margin-top: 50px;">KEGIATAN UJI COBA UPRAK</h1>
+        <h2 align="center">Tampilan Paragraf & Break Line</h2>
+        <p style="padding-left: 30px;">Persiapan untuk ujian prakek informatika yang sesuai dengan kisi-kisi yang diberikan</p>
+        <br>
+        <hr align="center" color="#191919" size="3" style="margin-top: 50px; margin-bottom: 50px;">
+
+        <!-- format, gerak, posisi text -->
+        <h2 align="center">Format Text</h2>
+        <p>
+            <strong>
+                <div align="center">
+                    <font color="#541212">CANDI PENUH SEJARAH</font> Kompleks Candi yang diukir langsung diatas tebing batu yang dulu digunakan untuk tempat pertapaan.
+                </div><br>
+                <div align="right">
+                    <font color="#000b49" align="center">PANCURAN MATA AIR</font> Terdapat sumber mata air langsung dari celah tebing yang dipercaya sebagai sumber air suci.
+                </div> <br>
+                <div>
+                    <font color="1f1d36" align="left"> WISATA ARUNG JERAM</font>Terdapat wisata arung jeram yang sangat dinikmati wisatawan dengan harga yang terjangkau.
+                </div>
+            </strong>
+        </p>
+        
+        <hr align="center" color="#191919" size="3" style="margin-top: 50px; margin-bottom: 50px;">
+        <h2 align="center">Tampilan List</h2>
+            <ol type="1">
+                <li>Jenis Makanan:
+                    <ol type="a">
+                        <li>sayur</li>
+                        <li>buah</li>
+                        <li>kacang</li>
+                    </ol>
+                </li>
+                <li>Makanan Bergizi
+                    <ol type="i">
+                        <li>jus</li>
+                        <li>susu</li>
+                        <li>dll</li>
+                    </ol>
+                </li>
+            </ol>
+        <br>
+        <hr align="center" color="#191919" size="3" style="margin-top: 50px; margin-bottom: 50px;">
+
+        <h2 align="center">Table</h2>
+        <center>
+        <table border="1" width="800px">
+            <tbody><tr style="text-align: center;">
+                <td>No</td>
+                <td>Nama Domain</td>
+                <td>Ket</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>1</td>
+                <td>Com</td>
+                <td>Comersial</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>2</td>
+                <td>Co.id</td>
+                <td>Negara Indonesia</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>3</td>
+                <td>Org</td>
+                <td>Organisasi</td>
+            </tr>
+            </tbody>
+        </table>
+        </center>
+        <hr align="center" color="#191919" size="3" style="margin-top: 50px; margin-bottom: 50px;">
+        <h2 align="center">Gambar</h2>
+        <figure>
+            <img src="kucing1.png" alt="" width="500px">
+            <img src="kucing2.png" alt="" width="50px">
+            <img src="kucing3.png" alt="" width="50px">
+            <img src="kucing4.png" alt="" width="50px">
+            <img src="kucing5.png" alt="" width="50px">
+            <img src="kucing6.png" alt="" width="500px">
+        </figure>
+         
+        <div align="center">
+            <marquee behavior="slide" direction="up" title="Meoww, Paket!!!">
+                <center>
+                    <img src="kucing.png" height="300px">
+                </center>
+            </marquee>
+        </div>
+        <hr align="center" color="#191919" size="3" style="margin-top: 50px; margin-bottom: 50px;">
+        <center>
+            <a href="frame.html">
+                <button class="btn">FRAME</button>
+            </a>
+        </center>
+        <hr align="center" color="#191919" size="3" style="margin-top: 50px; margin-bottom: 500px;">
+    </body>
+</html>
